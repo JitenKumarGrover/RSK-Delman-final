@@ -113,8 +113,14 @@ website:   	http://www.themepunch.com
 .rev_slider{
 	position:relative;
 	overflow:visible;
+	height: 510px !important;
 }
 
+@media (max-width: 480px){
+.padding_layout_1{
+	padding-top: 0px;
+}
+}
 .tp-overflow-hidden { overflow:hidden;}
 
 .tp-simpleresponsive img,

@@ -12,6 +12,8 @@
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
+<!-- GoogleFonts -->
+<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@600&family=Roboto:ital@1&display=swap" rel="stylesheet">
 <!-- Fontawesome -->
 <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 <!-- site icons -->
@@ -32,6 +34,21 @@
 <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" />
 <link rel="stylesheet" type="text/css" href="revolution/css/layers.css" />
 <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css" />
+<style>
+  
+  .floating-wpp-button
+  {
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 30px ;
+  }
+   .floating-wpp-button img
+  {
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 25px ;
+  }
+</style>
 </head>
 <body id="default_theme" class="it_service">
 <!-- loader -->
@@ -47,18 +64,18 @@
           <div class="full">
             <div class="topbar-left">
               <ul class="list-inline">
-                <li> <span class="topbar-label"><i class="fa  fa-phone" style="color: black;"></i></span><a href="tel:+91-1234567890" class="smooth" title=""><span class="topbar-hightlight"><b>+1234567890 </b></span></a> </li>
-                <li> <span class="topbar-label"><i class="fa fa-envelope-o" style="color: black;"></i></span> <span class="topbar-hightlight"><a style="color: black;" href="mailto:admin@delman.com.au"><b>admin@delman.com.au</b></a></span> </li>
+                <li> <span class="topbar-label"><i class="fa  fa-phone" style="color: black;"></i></span><a href="tel:+91-1234567890" class="smooth" title=""><span class="topbar-hightlight"><b class="top_contact">+1234567890 </b></span></a> </li>
+                <li> <span class="topbar-label"><i class="fa fa-envelope-o" style="color: black;"></i></span> <span class="topbar-hightlight"><a style="color: black;" href="mailto:admin@delman.com.au"><b class="top_contact">admin@delman.com.au</b></a></span> </li>
               </ul>
             </div>
           </div>
         </div>
         <div class="col-md-4 right_section_header_top">
           <div class="float-left">
-            <a href="https://www.facebook.com/"  target="_blank" style=" height:50px; width:90px; margin-top:0px; display:block; border-radius: 5px;"><img src="images/fblogo.jpg" height="100%" width="auto" alt="fb" style="border-radius: 5px;"></a>
+            <a class="fb_icon" href="https://www.facebook.com/"  target="_blank" style=" height:35px; width:35px; margin-top:0px; display:block; border-radius: 20px;"><img src="images/fblogo.png" height="100%" width="auto" alt="fb" style="border-radius: 25px;"></a>
           </div>
           <div class="float-right">
-            <div class="make_appo"> <a class="btn white_btn" href="book_a_service.html#b_a_S"><b>Book a Service</b></a> </div>
+            <div class="make_appo"> <a class="btn white_btn" href="book_a_service.html#b_a_S"><b class="book_text">Book a Service</b></a> </div>
           </div>
         </div>
       </div>
@@ -66,7 +83,8 @@
   </div>
   <!-- end header top -->
   <!-- header bottom -->
-  <div class="header_bottom">
+  <div id="mainMenuBarAnchor"></div>
+  <div class="header_bottom" id="mainMenuBar">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
@@ -83,8 +101,8 @@
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#wcu">Why Choose Us</a></li>
                 <li><a href="#cs">Clients Served</a></li>
-                <li> <a href="service.html">Services</a>
-                </li>
+                <li> <a href="service.html">Services</a></li>
+                <li> <a href="career.html">Careers</a></li>
                 <li><a href="book_a_service.html">Contact Us</a></li>
               </ul>
             </div>
@@ -98,18 +116,19 @@
 </header>
 <!-- end header -->
 <!--Div where the WhatsApp will be rendered-->
-<div style="z-index: 1;" id="WAButton"></div>
+<!-- <div id="WAButton" onclick="myFunction()" style="z-index: 2;"></div> -->
+<div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div" style="position: fixed; bottom: -60px; right: -55px; z-index: 80;"><a id="WhatsApp-button" href="whatsapp://send?text= Hello!!!&amp;phone=+917727986154" class="phoneJs" title="Hello, how can we help you?"><div class="cbh-ph-circle"></div><div class="cbh-ph-circle-fill"></div><div class="cbh-ph-img-circle1"></div></a></div>
 <!--Back to top-->
-<div id="backtop">&#9650;</div>
+<!-- <div id="backtop">&#9650;</div> -->
 <!-- section -->
-<div id="slider" class="section main_slider">
-  <div class="container-fuild">
-    <div class="row">
-      <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classicslider1" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+<div id="slider" class="section main_slider" style="height: 460px !important;">
+  <div class="container-fuild"  style="height: 460px !important;">
+    <div class="row"  style="height: 460px !important;">
+      <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classicslider1" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px; height: 460px !important;">
         <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
-        <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+        <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none; height: 460px !important;" data-version="5.0.7">
           <ul>
-            <li data-index="rs-1812" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/truck2.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Truck Services" data-description="">
+            <li style="height: 460px !important;" data-index="rs-1812" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="images/truck2.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Truck Services" data-description="">
               <!-- MAIN IMAGE -->
               <img src="images/truck2.jpg"  alt="#"  data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
               <!-- LAYERS -->
@@ -134,8 +153,8 @@
                               id="slide-18-layer-912" 
                               data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                               data-y="['middle','middle','middle','middle']" data-voffset="['15','15','15','15']" 
-                              data-width="500"
-                              data-height="140"
+                              data-width="1600"
+                              data-height="110"
                               data-whitespace="nowrap"
                               data-transform_idle="o:1;"
                               data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;" 
@@ -210,8 +229,8 @@
                               id="slide-18-layer-91" 
                               data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                               data-y="['middle','middle','middle','middle']" data-voffset="['15','15','15','15']" 
-                              data-width="500"
-                              data-height="140"
+                              data-width="1600"
+                              data-height="110"
                               data-whitespace="nowrap"
                               data-transform_idle="o:1;"
                               data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;" 
@@ -286,8 +305,8 @@
                               id="slide-18-layer-9" 
                               data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                               data-y="['middle','middle','middle','middle']" data-voffset="['15','15','15','15']" 
-                              data-width="500"
-                              data-height="140"
+                              data-width="1600"
+                              data-height="110"
                               data-whitespace="nowrap"
                               data-transform_idle="o:1;"
                               data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power4.easeInOut;" 
@@ -381,10 +400,7 @@
           <div class="product_img"> <img class="img-responsive" src="images/cs1.jpg" alt=""> </div>
           <div class="product_detail_btm">
             <div class="center">
-              <h4><a href="it_shop_detail.html">Diesel Engine Repairing and Maintenance</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
+              <h4>Diesel Engine Repairing and Maintenance</h4>
             </div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quas deleniti sunt magni, eveniet veritatis ea officiis placeat enim error accusantium? Natus doloribus.
           </div>
@@ -395,10 +411,7 @@
           <div class="product_img"> <img class="img-responsive" src="images/tt1.jpg" alt=""> </div>
           <div class="product_detail_btm">
             <div class="center">
-              <h4><a href="it_shop_detail.html">Towing and Transportaion</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
+              <h4>Towing and Transportaion</h4>
             </div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quas deleniti sunt magni, eveniet veritatis ea officiis placeat enim error accusantium? Natus doloribus.
           </div>
@@ -409,10 +422,7 @@
           <div class="product_img"> <img class="img-responsive" src="images/wc1.jpg" alt=""> </div>
           <div class="product_detail_btm">
             <div class="center">
-              <h4><a href="it_shop_detail.html">Petrol Engine Repairing and Maintenance</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
+              <h4>Petrol Engine Repairing and Maintenance</h4>
             </div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quas deleniti sunt magni, eveniet veritatis ea officiis placeat enim error accusantium? Natus doloribus.
           </div>
@@ -423,10 +433,7 @@
           <div class="product_img"> <img class="img-responsive" src="images/ts1.jpg" alt=""> </div>
           <div class="product_detail_btm">
             <div class="center">
-              <h4><a href="it_shop_detail.html">Cranes and Lifting Equipment</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
+              <h4>Cranes and Lifting Equipment</h4>
             </div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quas deleniti sunt magni, eveniet veritatis ea officiis placeat enim error accusantium? Natus doloribus.
           </div>
@@ -438,80 +445,6 @@
 </div>
 <!-- end section -->
 <!-- section -->
-<!-- <div class="section padding_layout_1" style = "margin-bottom: 0px; padding-bottom: 5px;">
-  <div id = "nature" class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="full">
-          <div class="main_heading text_align_center">
-            <h2>Our Business</h2>
-            <p class="large">Get familiar with the nature of our business and products</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/cs1.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.html">Diesel Engine Repairing and Maintenance</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quas deleniti sunt magni, eveniet veritatis ea officiis placeat enim error accusantium? Natus doloribus.
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/tt1.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.html">Towing and Transportaion</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quas deleniti sunt magni, eveniet veritatis ea officiis placeat enim error accusantium? Natus doloribus.
-          </div>
-        </div> 
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/wc1.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.html">Petrol Engine Repairing and Maintenance</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quas deleniti sunt magni, eveniet veritatis ea officiis placeat enim error accusantium? Natus doloribus.
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 margin_bottom_30_all">
-        <div class="product_list">
-          <div class="product_img"> <img class="img-responsive" src="images/ts1.jpg" alt=""> </div>
-          <div class="product_detail_btm">
-            <div class="center">
-              <h4><a href="it_shop_detail.html">Cranes and Lifting Equipment</a></h4>
-            </div>
-            <div class="starratin">
-              <div class="center"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> </div>
-            </div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quas deleniti sunt magni, eveniet veritatis ea officiis placeat enim error accusantium? Natus doloribus.
-          </div>
-        </div>
-      </div>
-     
-    </div>
-  </div>
-</div> -->
-<!-- end section -->
 <div style = "margin-bottom: 40px;"class="section light_silver gross_layout" id="wcu">
   <div class="container">
     <div class="row">
@@ -588,7 +521,7 @@
   <div id = "cs" class="container">
         <div class="full">
           <div class="main_heading" style="text-align: center;">
-            <h2>Clients Served</h2>
+            <h2>Our Clients</h2>
           </div>
         </div>
     <!-- Top content -->
@@ -625,11 +558,11 @@
             </div>
           </div>
           <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+              <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black; margin-top: 80px;"></span>
               <!-- <span class="sr-only">Previous</span> -->
           </a>
           <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+              <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black; margin-top: 80px;"></span>
               <!-- <span class="sr-only">Next</span> -->
           </a>
       </div>
@@ -645,9 +578,11 @@
       <div class="row" style="margin-bottom: 25px;">
         <div style="text-align: center;"class="col-12">
           <p class="designed" style="font-size: 130%; text-align: center;">For booking a service or any other query <a href="book_a_service.html" style="font-size: 130%;">Contact Us</a></p>
+          <br>
+          <p class="designed" style="font-size: 130%; text-align: center;"><i class="fas fa-thumbs-up"></i>&nbsp;	 Like us on <a href="https://www.facebook.com/" target="_blank" style="font-size: 130%; color: #4267B2 ;">Facebook</a></p>
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
           <div class="copy-right">
             <p>© Delman Service Centre</p>
@@ -657,14 +592,17 @@
           <div class="social-share">
             <ul>
               <li>
-                <a href="https://www.facebook.com/"  target="_blank" style=" height:50px; width:90px; margin-top:0px; display:block; border-radius: 5px; margin-right: 70px;"><img src="images/fblogo.jpg" height="100%" width="auto" alt="fb" style="border-radius: 5px;"></a>
+                <a href="https://www.facebook.com/"  target="_blank" style=" height:50px; width:90px; margin-top:0px; display:block; border-radius: 5px;"><img src="images/fblogo.png" height="100%" width="auto" alt="fb" style="border-radius: 25px;"></a>
               </li>
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="row">
         <div class="col-12">
+          <div class="copy-right">
+            <p>© Delman Service Centre</p>
+          </div>
           <p class="designed">Designed and Developed by <a href="https://rsktechlabs.com/" target="_blank">RSK Tech Labs</a></p>
         </div>
       </div>
@@ -672,6 +610,8 @@
   </div>
 </footer>
 <!-- Footer section ends here -->
+
+
 <!-- js section -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -703,5 +643,30 @@
 <!--Floating WhatsApp javascript-->
 <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
 <script src="js/float-whatsapp.js"></script>
+
+<script>
+$(document).ready(function() {
+    // Cache selectors for faster performance.
+    var $window = $(window),
+        $mainMenuBar = $('#mainMenuBar'),
+        $mainMenuBarAnchor = $('#mainMenuBarAnchor');
+
+    // Run this on scroll events.
+    $window.scroll(function() {
+        var window_top = $window.scrollTop();
+        var div_top = $mainMenuBarAnchor.offset().top;
+        if (window_top > div_top) {
+            // Make the div sticky.
+            $mainMenuBar.addClass('stick');
+            $mainMenuBarAnchor.height($mainMenuBar.height());
+        }
+        else {
+            // Unstick the div.
+            $mainMenuBar.removeClass('stick');
+            $mainMenuBarAnchor.height(0);
+        }
+    });
+});
+</script>
 </body>
 </html>
