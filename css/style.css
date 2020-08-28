@@ -965,22 +965,38 @@ header .right_bt .btn {
 	position: relative;
 }
 
-.fb_icon{
-	margin-left: 110px;
+.right_section_header_top{
+	align-items: center;
+	padding-top: 0.7%;
 }
 
-.make_appo {
+/* .make_appo {
 	float: right;
-}
+	
+ } */
 
 .make_appo .btn.white_btn {
-	margin: 0;
-	border-radius: 0;
+	margin: 2px;
 	font-weight: 600;
-	padding: 0 35px;
+	padding: 0 0px;
+	border : black 2.5px solid;
 	font-family: 'Raleway', sans-serif;
 	height: 38px !important;
 	line-height: 35px;
+}
+.make_appo :hover
+{
+	box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.4);
+}
+.make_appo .btn.white_btn :hover
+{
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+}
+
+a.btn.white_btn:hover
+{
+	color: black!important;
+	background-color: white!important;
 }
 .book_text{
 	margin-left: 0px;
@@ -1029,7 +1045,8 @@ header .right_bt .btn {
 }
 
 .top_contact{
-	font-family: 'Merriweather', serif;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 17px;
 }
 
 #navbar_menu,
@@ -3560,7 +3577,6 @@ footer ul.social_icons {
 
 .gross_layout::before {
 	position: absolute;
-	background: rgba(10, 139, 199, 0.8);
 	width: 35%;
 	height: 100%;
 	right: 0;
@@ -5028,6 +5044,9 @@ footer ul.social_icons {
 
 @media (min-width: 1350px) {
 	.topbar-left {
+	margin-left: -64px;
+}
+.logo{
 	margin-left: -70px;
 }
 }
@@ -5176,3 +5195,7 @@ footer ul.social_icons {
     margin-left: -60px;
     border-radius: 100%;
 }
+
+
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
