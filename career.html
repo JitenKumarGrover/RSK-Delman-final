@@ -13,7 +13,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <!-- GoogleFonts -->
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@600&family=Roboto:ital@1&display=swap" rel="stylesheet">
 <!-- Fontawesome -->
 <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
@@ -60,7 +60,7 @@
   <!-- header top -->
   <div class="header_top">
     <div class="container">
-      <div class="row">
+      <div class="row" style = "align-items: center;">
         <div class="col-md-8">
           <div class="full">
             <div class="topbar-left">
@@ -71,12 +71,14 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 right_section_header_top">
-          <div class="float-left">
-            <a class="fb_icon" href="https://www.facebook.com/"  target="_blank" style=" height:35px; width:35px; margin-top:0px; display:block; border-radius: 20px;"><img src="images/fblogo.png" height="100%" width="auto" alt="fb" style="border-radius: 25px;"></a>
+        <div class="col-md-4">
+          <div class="float-right"> 
+            <div class="make_appo">  <a class="btn white_btn" href="book_a_service.html#b_a_S"><b class="book_text">Book a Service</b></a> </div>
           </div>
-          <div class="float-right">
-            <div class="make_appo"> <a class="btn white_btn" href="book_a_service.html#b_a_S"><b class="book_text">Book a Service</b></a> </div>
+           <div class="float-left right_section_header_top">
+            <a class="fb_icon" href="https://www.facebook.com/"  target="_blank" style=" height: 35px; width:35px; display:block; border-radius: 20px;">
+              <img src="images/fblogo.png" height="100%" width="auto" alt="fb">
+            </a>
           </div>
         </div>
       </div>
@@ -163,7 +165,7 @@
                         <form class="form_contant" action="mailto:admin@delman.com.au?subject=Hire ME!!!" method="post" enctype="text/plain">
                           <fieldset class="row">
                           <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <input class="field_custom" placeholder="First Name*" name="First Name" type="text" required>
+                            <input class="field_custom" placeholder="First Name" name="First Name" type="text" required>
                           </div>
                           <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <input class="field_custom" placeholder="Last Name" name="Last Name" type="text" required>
@@ -178,12 +180,11 @@
                             <input id="sub" class="field_custom" placeholder="Qualifications" name="Qualification" type="text" required>
                           </div>
                           <div class="field col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <textarea class="field_custom" placeholder="Why should we hire you" name="Why should we hire you" required></textarea>
+                            <textarea class="field_custom" placeholder="Why should we hire you?" name="Why should we hire you?" required></textarea>
                           </div>
                           <div class="field col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <label style="color: black;">Upload your CV/Resume</label><br>
-                          <input type="file" name="fileToUpload" id="file" required>
-                          <p>Limit: 5Mb</p>
+                            <label style="color: black;">Link for your CV/Resume</label><br>
+                            <input id="sub" class="field_custom" placeholder="Link for CV/Resume" name="CV/Resume" type="url" required>
                           <script>
                             var uploadField = document.getElementById("file");
                                 uploadField.onchange = function() {
@@ -222,7 +223,79 @@
             <p class="designed" style="font-size: 130%; text-align: center;"><i class="fas fa-thumbs-up"></i>&nbsp;	 Like us on <a href="https://www.facebook.com/" target="_blank" style="font-size: 130%; color: #4267B2 ;">Facebook</a></p>
         </div>
         </div>
-        <div class="row">
+        <div class="row" style="text-align: left;">
+
+          <!-- Grid column -->
+          <div class="col-md-4 mx-auto">
+    
+            <!-- Content -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: white;">Delman Service Centre</h5>
+            <p style="text-align: justify;">Here at Delman, we value your time and money
+              both. These are the most valuables assets for us.
+              We believe in quality of work in the most
+              appropriate manner possible. </p>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto" >
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: white;">QUICK LINKS</h5>
+    
+            <ul class="list-unstyled">
+              <li style="line-height: 25px;">
+                <a style="color: white;" href="index.html">Home</a>
+              </li>
+              <li  style="line-height: 25px;">
+                <a style="color: white;" href="index.html#about">About US</a>
+              </li>
+              <li  style="line-height: 25px;">
+                <a style="color: white;" href="index.html#wcu">Why Choose US</a>
+              </li>
+              <li  style="line-height: 25px;">
+                <a style="color: white;" href="service.html">Services</a>
+              </li>
+              <li  style="line-height: 25px;">
+                <a style="color: white;" href="career.html">Career</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none" >
+    
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: white;">BRANCH ADDRESS</h5>
+    
+            <ul class="list-unstyled">
+              <li style="line-height: 25px;">
+                <a style="color: white;" href="book_a_service.html#gmap"><i class="fas fa-map-marker-alt"></i> &nbsp; VIC 3000   </a>
+              </li>
+              <li style="line-height: 25px;">
+                <a style="color: white;" href="tel:+91-1234567890"> <i class="fa  fa-phone"></i>  &nbsp; +1234567890</a>
+              </li>
+              <li style="line-height: 25px;">
+                <a style="color: white;" href="mailto:admin@delman.com.au"><i class="far fa-envelope"></i>  &nbsp; admin@delman.com.au</a>
+              </li>
+              <li style="line-height: 25px;">
+                <a style="color: white;">Open Hours :</a> <br>
+                <a style="color: white;"> Mon to Fri : 11:00am – 11:30pm </a> <br>
+                <a style="color: white;">Sat – Sun : 14:00am – 11:30pm</a>
+              </li>
+            </ul>
+    
+          </div>
+    
+        </div>
+        <div class="row" style="padding-top: 20px !important;">
           <div class="col-12">
             <div class="copy-right">
               <p>© Delman Service Centre</p>
